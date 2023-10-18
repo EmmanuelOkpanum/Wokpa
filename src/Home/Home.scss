@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// General-scss
+
+$primary-color: #212121;
+
+$left-pane-bk: #303030;
+
+$font-color: #fff;
+$font-family: "M PLUS Rounded 1c", sans-serif;
+$font-size: 16px;
+$font-style: bold;
+$font-weight: 800;
+
+.home-container {
+  position: relative;
+  width: 100%;
+  background: $primary-color;
+
+  .leftpane-container {
+    width: 20%;
+    position: relative;
+    background: $left-pane-bk;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+
+    .container {
+      padding: 10px;
+
+      .logo {
+        img {
+          width: 40%;
+        }
+      }
+
+      .top-categories {
+        margin-top: 10px;
+
+        ul {
+          .tab-button {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            img {
+              width: 30%;
+            }
+
+            p {
+              color: $font-color;
+              font-family: $font-family;
+              font-size: $font-size;
+              font-style: $font-style;
+              font-weight: $font-weight;
+            }
+          }
+
+          .tab-button.active {
+            background: linear-gradient(
+              91deg,
+              rgba(217, 217, 217, 0.61) -3.62%,
+              rgba(217, 217, 217, 0) 123.06%
+            );
+            border-radius: 20px;
+          }
+        }
+      }
+
+      .library-categories {
+        margin-top: 10px;
+        padding: 10px;
+
+        .header {
+          list-style: none;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+
+          h5 {
+            color: $font-color;
+            font-family: $font-family;
+            font-size: 18px;
+            font-style: $font-style;
+            font-weight: $font-weight;
+          }
+
+          img {
+            width: 7%;
+          }
+        }
+
+        .library-icons {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 40px;
+          margin-top: 20px;
+        }
+
+        ul {
+          margin-top: 10px;
+
+          .tab-button {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            img {
+              width: 30%;
+              margin-left: -20px;
+            }
+
+            p {
+              color: $font-color;
+              font-family: $font-family;
+              font-size: $font-size;
+              font-style: $font-style;
+              font-weight: $font-weight;
+            }
+          }
+
+          .tab-button.active {
+            background: linear-gradient(
+              91deg,
+              rgba(217, 217, 217, 0.61) -3.62%,
+              rgba(217, 217, 217, 0) 123.06%
+            );
+            border-radius: 20px;
+          }
+        }
+      }
+
+      hr {
+        margin: 20px 0;
+      }
+
+      .other-categories {
+        padding: 10px;
+
+        ul {
+          .tab-button {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-bottom: 20px;
+            padding: 10px;
+
+            img {
+              width: 9%;
+            }
+
+            p {
+              color: $font-color;
+              font-family: $font-family;
+              font-size: $font-size;
+              font-style: $font-style;
+              font-weight: $font-weight;
+            }
+          }
+
+          .tab-button.active {
+            background: linear-gradient(
+              91deg,
+              rgba(217, 217, 217, 0.61) -3.62%,
+              rgba(217, 217, 217, 0) 123.06%
+            );
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}
